@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <meta name="description" content="Play the classic Snake game online for free at FreePixelGames.io. Test your reflexes and grow your snake!">
+    <meta name="keywords" content="snake game, classic game, pixel game, free game, browser game, retro game">
+    <meta name="author" content="FreePixelGames.io">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.freepixelgames.io/games/snake/index.html">
+    <meta property="og:title" content="Snake Game - Free Pixel Games">
+    <meta property="og:description" content="Play the classic Snake game online for free at FreePixelGames.io. Test your reflexes and grow your snake!">
+    <meta property="og:image" content="https://www.freepixelgames.io/favicon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.freepixelgames.io/games/snake/index.html">
+    <meta property="twitter:title" content="Snake Game - Free Pixel Games">
+    <meta property="twitter:description" content="Play the classic Snake game online for free at FreePixelGames.io. Test your reflexes and grow your snake!">
+    <meta property="twitter:image" content="https://www.freepixelgames.io/favicon.png">
+
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="../../css/styles.css"> <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/bmc-styles.css"> <!-- Link to BMC styles -->
+</head>
+<body>
+    <div id="header"></div> <!-- Header placeholder -->
+
+    <main>
+        <div class="container">
+            <div class="game-container">
+                <h1>Snake</h1>
+                <canvas id="game-board" width="400" height="400"></canvas>
+                <p>Score: <span id="score">0</span></p>
+                <div class="game-controls">
+                    <button id="start-button">Start Game</button>
+                    <button id="retry-button" style="display: none;">Retry</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div id="footer"></div> <!-- Footer placeholder -->
+
+    <!-- Buy Me a Coffee Integration -->
+    <div id="bmc-floating"></div>
+
+    <script src="../../js/main.js"></script> <!-- Link to main JavaScript for header/footer loading -->
+    <script src="game.js"></script>
+    <script src="../../js/bmc.js"></script> <!-- Link to BMC script -->
+</body>
+</html>

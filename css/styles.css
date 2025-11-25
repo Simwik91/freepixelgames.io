@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: #161b22;
+    padding: 1rem 0;
+    border-bottom: 1px solid #30363d;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes soft-neon-blink {
+    0%, 100% {
+        text-shadow: 0 0 5px #bb86fc, 0 0 10px #bb86fc, 0 0 15px #bb86fc;
+        color: #f0f0f0;
+    }
+    50% {
+        text-shadow: 0 0 8px #9e64e4, 0 0 15px #9e64e4, 0 0 25px #9e64e4;
+        color: #ffffff;
+    }
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    animation: soft-neon-blink 4s infinite ease-in-out;
+}
+
+
+
+main {
+    flex: 1;
+    background-color: #f0f2f5;
+    color: #0d1117;
+    padding: 0;
+}
+
+main .container {
+    padding: 2rem 0;
+}
+
+h1 {
+    color: #0d1117;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+#game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+#game-list a {
+    display: block;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #0d1117;
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#game-list a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.main-footer {
+    background-color: #161b22;
+    padding: 2rem 0;
+    border-top: 1px solid #30363d;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+}
+
+
